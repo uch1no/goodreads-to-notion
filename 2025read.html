@@ -1,30 +1,29 @@
 <html>
   <style type="text/css" media="screen">
-  .grid_container {
-    /* customize grid container div here. eg: width: 500px; */
-  }
+    .grid_container {
+      display: flex;
+      justify-content: space-between;
+    }
 
-  .book_container {
-    /* customize book cover container div here */
-    float: right;
-    width: 248px;
-    height: auto;
-    padding: 0px 0px;
-    overflow: hidden;
-  }
+    .book_container {
+      width: calc(100% - 268px); /* Adjust the width to accommodate the challenge container */
+      height: auto;
+      padding: 0px 0px;
+      overflow: hidden;
+    }
 
-  .challenge_container {
-    border: 2px solid #EBE8D5;
-    border-radius: 10px;
-    padding: 0px 7px;
-    max-width: 230px;
-    min-height: 100px;
-    background: white;
-    /* float: left; */ /* Remove this line */
-  }
-</style>
-  <div id="grid_container">
-      <!-- Add the title here -->
+    .challenge_container {
+      border: 2px solid #EBE8D5;
+      border-radius: 10px;
+      padding: 0px 7px;
+      width: 248px; /* Set width to 248px */
+      min-height: 100px;
+      background: white;
+      margin-left: auto; /* Ensure right alignment */
+    }
+  </style>
+  <div class="grid_container">
+    <!-- Add the title here -->
     <h3 style="margin: 4px 0 10px; font-weight: normal; text-align: center">
       <a
         style="text-decoration: none; font-family: georgia, serif; font-style: italic; font-size: 1.1em"
@@ -32,7 +31,7 @@
         href="https://www.goodreads.com/challenges/11627-2025-reading-challenge"
       >2025 Books</a>
     </h3>
-  <div class="book_container">
+    <div class="book_container">
       <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
       <div class="gr_grid_container">
         <br style="clear: both" /><br /><a
@@ -42,7 +41,7 @@
           href="https://www.goodreads.com/"
           >Goodreads</a
         >
-        
+
         <noscript
           ><br />Share <a rel="nofollow" href="/">book reviews</a> and ratings
           with Rodrigo, and even join a <a rel="nofollow" href="/group">book
@@ -54,7 +53,7 @@
     <script
       src="https://www.goodreads.com/review/grid_widget/107822755.Rodrigo's%202025%20book%20montage?cover_size=medium&hide_link=&hide_title=true&num_books=100&order=a&shelf=2025&sort=date_added&widget_id=1738436581"
     ></script>
-    
+
     <div class="challenge_container">
       <div
         id="gr_challenge_progress_body_11627"
