@@ -1,0 +1,39 @@
+<style type="text/css" media="screen">
+            .gr_grid_container {
+            /* customize grid container div here. eg: width: 500px; */
+            }
+
+            .gr_grid_book_container {
+            /* customize book cover container div here */
+            float: left;
+            width: 98px;
+            height: 160px;
+            padding: 0px 0px;
+            overflow: hidden;
+            }
+
+            a {
+            font-size: 1.0em;
+            color: #382110;
+            text-decoration: none;
+            }
+            
+            img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            objectFit: cover;
+            }
+
+            .button {
+            display: inline-block;
+            float: none;
+            clear: none;
+            background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
+            color: rgb(0, 0, 0); /* Black */
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 0px none rgb(0, 0, 0); /* No border */
+            text-decoration: none solid rgb(0, 0, 0); /* No underline */
+            }
+</style>
