@@ -1,21 +1,29 @@
 <style type="text/css" media="screen">
             .gr_grid_container {
             /* customize grid container div here. eg: width: 500px; */
+            width: 100%;
+            display: flow-root;
+            flex-wrap: nowrap;
+            grid-template-columns: none;
+            grid-template-rows: none;
             }
 
             .gr_grid_book_container {
             /* customize book cover container div here */
             float: left;
             width: 98px;
-            height: 160px;
+            height: 146px;
             padding: 0px 0px;
             overflow: hidden;
+            box-sizing: content-box;
             }
 
             a {
             font-size: 1.0em;
             color: #382110;
             text-decoration: none;
+            float: left;
+            clear: both;
             }
             
             img {
